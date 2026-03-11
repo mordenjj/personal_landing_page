@@ -1,12 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Landing Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Josh Morden — Digital Product Manager</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
-    <h1>Hello World</h1>
-    
+
+  <!-- Navigation -->
+  <header class="site-nav" role="banner">
+    <div class="site-nav__inner">
+      <a href="#hero" class="site-nav__brand">Josh Morden</a>
+      <nav aria-label="Main navigation">
+        <ul class="site-nav__links">
+          <li><a href="#bio">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="hero" aria-labelledby="hero-name">
+      <div class="hero__inner">
+        <img
+          src="images/headshot.jpeg"
+          alt="Professional headshot of Josh Morden"
+          class="hero__photo"
+          width="160"
+          height="160"
+        >
+        <h1 class="hero__name" id="hero-name">Josh Morden</h1>
+        <p class="hero__tagline">Digital Product Manager | Business Analytics Student</p>
+      </div>
+    </section>
+
+    <!-- Bio -->
+    <section class="bio" id="bio" aria-labelledby="bio-heading">
+      <div class="section-inner">
+        <h2 class="section-title" id="bio-heading">About</h2>
+        <p class="bio__text">
+          I am a Business Analytics and Information Systems student at the Tippie College of Business,
+          University of Iowa, graduating in May 2026 with a 3.99 GPA. My coursework spans data analytics,
+          machine learning, database management, and data visualization, and I apply those skills to build
+          data-driven products from concept to deployment. I am actively seeking opportunities in digital
+          product management where I can bridge technical analysis and strategic delivery.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills" id="skills" aria-labelledby="skills-heading">
+      <div class="section-inner">
+        <h2 class="section-title" id="skills-heading">Skills</h2>
+
+        <div class="skills__group">
+          <p class="skills__group-label">Technical</p>
+          <ul class="skills__tags" role="list">
+            <li><span class="tag tag--technical">Python</span></li>
+            <li><span class="tag tag--technical">SQL</span></li>
+            <li><span class="tag tag--technical">Microsoft Excel</span></li>
+            <li><span class="tag tag--technical">Azure Databricks</span></li>
+            <li><span class="tag tag--technical">Power BI</span></li>
+            <li><span class="tag tag--technical">PySpark</span></li>
+          </ul>
+        </div>
+
+        <div class="skills__group">
+          <p class="skills__group-label">Methodologies</p>
+          <ul class="skills__tags" role="list">
+            <li><span class="tag tag--methodology">Data Cleaning</span></li>
+            <li><span class="tag tag--methodology">Classification</span></li>
+            <li><span class="tag tag--methodology">Web Scraping</span></li>
+            <li><span class="tag tag--methodology">Clustering</span></li>
+            <li><span class="tag tag--methodology">Predictive Modeling</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects" aria-labelledby="projects-heading">
+      <div class="section-inner">
+        <h2 class="section-title" id="projects-heading">Projects</h2>
+        <div class="projects__grid">
+
+          <article class="project-card" aria-labelledby="project-ncaa">
+            <h3 class="project-card__title" id="project-ncaa">NCAA Women's Basketball Viewership</h3>
+            <p class="project-card__description">
+              Gathered and organized viewership data, then developed a regression model in Excel to
+              identify trends in NCAA women's basketball viewership over time. Transformed results into
+              visualizations to present insights and conclusions, finding a slight correlation between
+              key variables.
+            </p>
+            <ul class="project-card__tools" role="list" aria-label="Tools used">
+              <li><span class="tool-tag">Microsoft Excel</span></li>
+              <li><span class="tool-tag">Regression Modeling</span></li>
+              <li><span class="tool-tag">Data Visualization</span></li>
+            </ul>
+          </article>
+
+          <article class="project-card" aria-labelledby="project-olympic">
+            <h3 class="project-card__title" id="project-olympic">Olympic Swimming Records Database</h3>
+            <p class="project-card__description">
+              Collected, cleaned, and organized raw data from online sources recording Olympic swimming
+              results. Designed and built a web-based SQL database to store the results, then authored
+              SQL queries and visualizations to surface meaningful patterns in the data.
+            </p>
+            <ul class="project-card__tools" role="list" aria-label="Tools used">
+              <li><span class="tool-tag">SQL</span></li>
+              <li><span class="tool-tag">Database Design</span></li>
+              <li><span class="tool-tag">Web Scraping</span></li>
+            </ul>
+          </article>
+
+          <article class="project-card" aria-labelledby="project-nypd">
+            <h3 class="project-card__title" id="project-nypd">NYPD 2024 Arrest Analysis</h3>
+            <p class="project-card__description">
+              Loaded NYPD arrest data into Azure Databricks using PySpark and SQL, then performed
+              data summarization to understand patterns across the dataset. Built machine learning
+              models to classify and cluster arrest records and presented the full analysis and findings.
+            </p>
+            <ul class="project-card__tools" role="list" aria-label="Tools used">
+              <li><span class="tool-tag">Azure Databricks</span></li>
+              <li><span class="tool-tag">PySpark</span></li>
+              <li><span class="tool-tag">SQL</span></li>
+              <li><span class="tool-tag">Machine Learning</span></li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact" aria-labelledby="contact-heading">
+      <div class="section-inner">
+        <h2 class="section-title" id="contact-heading">Contact</h2>
+        <div class="contact__links">
+
+          <a
+            href="https://www.linkedin.com/in/josh-morden/"
+            class="contact__link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Connect with Josh Morden on LinkedIn"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+            LinkedIn
+          </a>
+
+          <a
+            href="https://github.com/mordenjj"
+            class="contact__link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View Josh Morden's projects on GitHub"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+            GitHub
+          </a>
+
+          <a
+            href="mailto:josh-morden@uiowa.edu"
+            class="contact__link"
+            aria-label="Send an email to Josh Morden at the University of Iowa"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            josh-morden@uiowa.edu
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Josh Morden. University of Iowa, Tippie College of Business.</p>
+  </footer>
+
 </body>
 </html>
