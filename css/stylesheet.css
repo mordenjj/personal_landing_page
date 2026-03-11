@@ -7,13 +7,14 @@
 }
 
 :root {
-  --color-bg: #F8F9FA;
-  --color-text: #212529;
-  --color-accent: #0D6E6E;
-  --color-accent-dark: #0a5858;
-  --color-secondary-bg: #E9ECEF;
-  --color-white: #ffffff;
-  --color-border: #dee2e6;
+  --color-bg: #F7F0E3;
+  --color-text: #2C1A10;
+  --color-accent: #8B3626;
+  --color-accent-dark: #6E2B1E;
+  --color-gold: #B8922A;
+  --color-secondary-bg: #EDE0C4;
+  --color-white: #FFFBF5;
+  --color-border: #D4C4A8;
   --max-width: 900px;
   --section-padding: 60px 1.5rem;
   --font: 'Inter', system-ui, -apple-system, sans-serif;
@@ -103,7 +104,7 @@ body {
   color: var(--color-accent);
   margin-bottom: 1.75rem;
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid var(--color-accent);
+  border-bottom: 2px solid var(--color-gold);
   display: inline-block;
 }
 
@@ -131,7 +132,7 @@ body {
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid var(--color-accent);
-  box-shadow: 0 4px 16px rgba(13, 110, 110, 0.15);
+  box-shadow: 0 4px 16px rgba(139, 54, 38, 0.18);
 }
 
 .hero__name {
@@ -248,7 +249,7 @@ body {
 
 .project-card__description {
   font-size: 0.9rem;
-  color: #495057;
+  color: #5C4033;
   line-height: 1.6;
   flex: 1;
 }
@@ -263,8 +264,8 @@ body {
 .tool-tag {
   font-size: 0.75rem;
   font-weight: 500;
-  color: var(--color-accent);
-  background-color: rgba(13, 110, 110, 0.08);
+  color: var(--color-gold);
+  background-color: rgba(184, 146, 42, 0.12);
   padding: 0.2rem 0.6rem;
   border-radius: 4px;
 }
@@ -300,7 +301,7 @@ body {
 .contact__link:focus {
   border-color: var(--color-accent);
   color: var(--color-accent);
-  box-shadow: 0 2px 8px rgba(13, 110, 110, 0.12);
+  box-shadow: 0 2px 8px rgba(139, 54, 38, 0.12);
   outline: none;
 }
 
@@ -321,7 +322,7 @@ body {
   text-align: center;
   padding: 1.5rem;
   font-size: 0.8rem;
-  color: #868e96;
+  color: #9E8A78;
 }
 
 /* ── Responsive ──────────────────────────────────────────── */
